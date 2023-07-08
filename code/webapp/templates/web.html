@@ -1,0 +1,56 @@
+<!-- Create the HTML page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car list</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../static/list.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <h1>Car list</h1>
+        <form action="http://localhost:5002/get_cars" method="get" class="form">
+            <div class="first">
+                <label for="brand">Car make</label>
+                <input type="text" name="brand" id="brand" required>
+            </div>
+            <div class="first">
+                <label for="yearMin">Year</label>
+                <div class="move">
+                    <div class="second-left">
+                        <label> Min: </label>
+                        <input type="number" class="align-year" name="yearMin" id="yearMin1" step="1" required>
+                    </div>
+                    <div class="second-right">
+                        <label> Max: </label>
+                        <input type="number" class="align-year" name="yearMax" id="yearMax1" step="1" required>
+                    </div>
+                </div>
+            </div>
+            <div class="first">
+                <label for="priceMin">Price (in dollars)</label>
+                <div class="move">
+                    <div class="second-left">
+                        <label class="right"> Min: </label>
+                        <input type="number" class="align-price" name="priceMin" id="priceMin2" step="1" required>
+                    </div>
+                    <div class="second-right">
+                        <label class="right"> Max: </label>
+                        <input type="number" class="align-price" name="priceMax" id="priceMax2" step="1" required>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button" onclick="get_elements(this)">Research</button>
+            </div>
+            <div class="list">
+                <ul></ul>
+            </div>
+        </form>
+
+</body>
+
+</html>
