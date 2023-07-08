@@ -15,5 +15,5 @@ The application is characterised by 3 pods, which developed 3 different services
 
 ## Usage
 In this project there are also some script to deploy the application in a simplier way:
-- '''start.sh''': allow to create the images, the pods and expose the services on the relative ports;
-- '''stop.sh''': close the application deleting all the pods in running.
+- ```start.sh```: allow to create the images, the pods and expose the services on the relative ports;
+- ```stop.sh```: close the application deleting all the pods in running.
